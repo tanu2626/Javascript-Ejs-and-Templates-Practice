@@ -18,7 +18,16 @@ app.get("/fallinlovewith/:thing", function(req, res) {
   res.render("love.ejs", {thingVar: thing});
 });
 
+app.get("/posts", function(req, res) {
+  var posts = [
+    {title: "Post 1", author: "Tanu"},
+    {title: "My favourite flower is Rose", author: "Tanus"},
+    {title: "My favourite flower is Lotus", author: "Manisha"},
+    {title: "My favourite flower is Sun Flower", author: "Love"},
+  ];
 
+  res.render("posts.ejs", {posts: posts});
+})
 
 //fall in love with roses
 

@@ -1,4 +1,13 @@
 <h1>You fell in love with: <%= thingVar.toUpperCase() %></h1>
+
+
+<!-- control flows in ejs -->
+
+<% if(thingVar.toLowerCase() === "tanu"){ %>
+  <p> Good Choice!! Tanu is the best!!! </p>
+<% }  else { %>
+  <p> Bad Choice!! You could have said Tanu</p>
+<% } %>
 <!-- define the thingVar in app.js -->
 
 <p> P.S this is the love.ejs file </p>
